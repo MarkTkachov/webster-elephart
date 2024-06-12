@@ -1,0 +1,41 @@
+.carousel-container {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.carousel-item {
+    flex: 0 0 150px;
+    margin: 0 1px;
+    /* Reduce the margin to decrease the distance between items */
+}
+
+@media (min-width: 768px) {
+    .carousel-item {
+        flex: 0 0 200px;
+        /* Adjust for larger screens */
+        margin: 0 1px;
+        /* Maintain the reduced margin */
+    }
+}
+
+@media (min-width: 1024px) {
+    .carousel-item {
+        flex: 0 0 250px;
+        /* Adjust for even larger screens */
+        margin: 0 1px;
+        /* Maintain the reduced margin */
+    }
+}
+
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
